@@ -1,0 +1,40 @@
+name: Python CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python3 -m venv .venv
+          source .venv/bin/activate
+          pip install uv
+          make install
+
+      - name: Run linter
+        run: |
+          source .venv/bin/activate
+          make lint
+
+      - name: Run tests and generate coverage
+        run: |
+          source .venv/bin/activate
+          make test-coverage
+
+      - name: Upload coverage to Code Climate
+        uses: paambaati/codeclimate-action@v9.0.0
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+        with:
+          coverageCommand: make test-coverage
+          debug: true
