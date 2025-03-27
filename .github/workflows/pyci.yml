@@ -28,7 +28,7 @@ jobs:
       - name: Upload coverage to Code Climate
         uses: paambaati/codeclimate-action@v9.0.0
         env:
-          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+          CC_TEST_REPORTER_ID: ${{ secrets.QLTY_COVERAGE_TOKEN }}
         with:
           coverageCommand: make test-coverage
           debug: true
