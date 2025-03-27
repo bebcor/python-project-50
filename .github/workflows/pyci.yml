@@ -16,27 +16,19 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python3 -m venv .venv
-          source .venv/bin/activate
-          pip install uv pytest pytest-cov
+          pip3 install --user uv pytest pytest-cov
           make install
 
       - name: Run linter
-        run: |
-          source .venv/bin/activate
-          make lint
+        run: make lint
 
       - name: Run tests and generate coverage
-        run: |
-          source .venv/bin/activate
-          make test-coverage
+        run: make test-coverage
 
       - name: Upload coverage to Code Climate
         uses: paambaati/codeclimate-action@v9.0.0
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
         with:
-          coverageCommand: |
-            source .venv/bin/activate
-            make test-coverage
+          coverageCommand: make test-coverage
           debug: true

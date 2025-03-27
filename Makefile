@@ -1,13 +1,15 @@
 install:
-	uv pip install -r requirements.txt
+	pip3 install --user --break-system-packages -r requirements.txt
 
 lint:
-	ruff check .
+	python3 -m ruff check .
 
 test:
-	pytest -v tests/
+	python3 -m pytest -v tests/
 
 test-coverage:
 	python3 -m pytest --cov=gendiff --cov-report xml tests/
 
 check: lint test
+
+.PHONY: install lint test test-coverage check
