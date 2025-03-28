@@ -25,10 +25,8 @@ jobs:
       - name: Run tests and generate coverage
         run: make test-coverage
 
-      - name: Upload coverage to Code Climate
-        uses: paambaati/codeclimate-action@v9.0.0
-        env:
-          CC_TEST_REPORTER_ID: ${{ secrets.QLTY_COVERAGE_TOKEN }}
+      - name: Upload coverage to Qlty.sh
+        uses: qltysh/qlty-action/coverage@main
         with:
-          coverageCommand: make test-coverage
-          debug: true
+          coverage-token: ${{ secrets.QLTY_COVERAGE_TOKEN }}
+          files: lcov.info  
