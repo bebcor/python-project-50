@@ -5,6 +5,11 @@
 [![CI](https://github.com/bebcor/python-project-50/actions/workflows/pyci.yml/badge.svg)](https://github.com/bebcor/python-project-50/actions)
 
 
-### Example of how the package works
+### Example of package operation (json file)
 
 # https://asciinema.org/a/TttQJvqMTfhhfqXkqxfK9DoB4
+
+
+
+### Example of package operation (yaml file)
+# https://asciinema.org/a/n6D7ppTfdBFPFTT95J6OZRLLr

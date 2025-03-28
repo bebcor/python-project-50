@@ -1,26 +1,22 @@
 import argparse
-import json
 
-
-def read_and_parse(file_path):
-    with open(file_path, 'r') as result_file:
-        return json.load(result_file)
+from gendiff.scripts.parser import parse_file
 
 
 def format_value(value):
     if isinstance(value, bool):
         return str(value).lower()
     elif value is None:
-        return 'null'  
+        return 'null'
     elif isinstance(value, (int, float)):
         return str(value)
-    else:  
-        return f'"{value}"'  
+    else:
+        return str(value)  
 
 
 def generate_diff(file_path1, file_path2):
-    data1 = read_and_parse(file_path1)
-    data2 = read_and_parse(file_path2)
+    data1 = parse_file(file_path1)
+    data2 = parse_file(file_path2)
     keys = sorted(set(data1.keys()).union(set(data2.keys())))
     diff_lines = []
     
@@ -30,26 +26,25 @@ def generate_diff(file_path1, file_path2):
         
         if in_data1 and not in_data2:
             formatted_value = format_value(data1[key])
-            diff_line = f'  - "{key}": {formatted_value}'  
+            diff_line = f'    - {key}: {formatted_value}'
         elif in_data2 and not in_data1:
             formatted_value = format_value(data2[key])
-            diff_line = f'  + "{key}": {formatted_value}'  
+            diff_line = f'    + {key}: {formatted_value}'
         else:
             value1 = data1[key]
             value2 = data2[key]
             if value1 == value2:
                 formatted_value = format_value(value1)
-                diff_line = f'    "{key}": {formatted_value}'
+                diff_line = f'      {key}: {formatted_value}'
             else:
                 formatted1 = format_value(value1)
                 formatted2 = format_value(value2)
-                diff_line = f'  - "{key}": {formatted1}'
-                diff_lines.append(diff_line)
-                diff_line = f'  + "{key}": {formatted2}'
+                diff_lines.append(f'    - {key}: {formatted1}')
+                diff_line = f'    + {key}: {formatted2}'
         
         diff_lines.append(diff_line)
     
-    return '{\n' + ',\n'.join(diff_lines) + '\n}'
+    return '{\n' + '\n'.join(diff_lines) + '\n}'  
 
 
 def main():
@@ -69,7 +64,3 @@ def main():
     args = parser.parse_args()
     diff = generate_diff(args.first_file, args.second_file)
     print(diff)
-
-
-if __name__ == '__main__':
-    main()
