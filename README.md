@@ -13,3 +13,8 @@
 
 ### Example of package operation (yaml file)
 # https://asciinema.org/a/n6D7ppTfdBFPFTT95J6OZRLLr
+
+
+
+### Example of package operation (json/yml file)
+#https://asciinema.org/a/JExu90EiBiLluYsxgTVe363gn
