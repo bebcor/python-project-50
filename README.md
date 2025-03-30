@@ -18,3 +18,6 @@
 
 ### Example of package operation (json/yml file)
 #https://asciinema.org/a/JExu90EiBiLluYsxgTVe363gn
+
+
+###tests
