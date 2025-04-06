@@ -11,7 +11,7 @@
 ### Output result: stylish, plain, json
 
 
-##1) Usage:
+## 1) Usage:
 
 ### Install dependencies - make install
 
@@ -31,12 +31,12 @@
 # https://asciinema.org/a/beP5dJFB22WSAVdDRwzAhvWIn
 
 
-##2) Testing
+## 2) Testing
 
 ### Use comprehensive testing (coverage checks and tests) - make check
 
 
-##3) Technology stack
+## 3) Technology stack
 
 ### pytest==8.3.5
 ### pytest-cov==6.0.0
