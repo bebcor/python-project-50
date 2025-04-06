@@ -5,15 +5,15 @@
 [![CI](https://github.com/bebcor/python-project-50/actions/workflows/pyci.yml/badge.svg)](https://github.com/bebcor/python-project-50/actions)
 
 
-##Gendiff
-###Gendiff is a utility for comparing YAML and Json files with output in three different formats.
-###Input file support: YAML and JSON
-###Output result: stylish, plain, json
+## Gendiff
+### Gendiff is a utility for comparing YAML and Json files with output in three different formats.
+### Input file support: YAML and JSON
+### Output result: stylish, plain, json
 
 
 ##1) Usage:
 
-###Install dependencies - make install
+### Install dependencies - make install
 
 ### Example of package operation (json file)
 # https://asciinema.org/a/TttQJvqMTfhhfqXkqxfK9DoB4
@@ -33,12 +33,12 @@
 
 ##2) Testing
 
-###Use comprehensive testing (coverage checks and tests) - make check
+### Use comprehensive testing (coverage checks and tests) - make check
 
 
 ##3) Technology stack
 
-###pytest==8.3.5
-###pytest-cov==6.0.0
-###ruff==0.4.2
-###pyyaml==6.0.1 
+### pytest==8.3.5
+### pytest-cov==6.0.0
+### ruff==0.4.2
+### pyyaml==6.0.1 
