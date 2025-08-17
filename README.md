@@ -49,22 +49,22 @@ make check
    [![asciicast](https://asciinema.org/a/TttQJvqMTfhhfqXkqxfK9DoB4.svg)](https://asciinema.org/a/TttQJvqMTfhhfqXkqxfK9DoB4)
 ---
 
-3. Example of package operation (yaml file)
+2. Example of package operation (yaml file)
 ---
    [![asciicast](https://asciinema.org/a/n6D7ppTfdBFPFTT95J6OZRLLr.svg)](https://asciinema.org/a/n6D7ppTfdBFPFTT95J6OZRLLr)
 ---
 
-4. Example of package operation (stylish)
+3. Example of package operation (stylish)
 ---
    [![asciicast](https://asciinema.org/a/JExu90EiBiLluYsxgTVe363gn.svg)](https://asciinema.org/a/JExu90EiBiLluYsxgTVe363gn)
 ---
 
-5. Example of package operation (plain)
+4. Example of package operation (plain)
 ---
    [![asciicast](https://asciinema.org/a/137X6PyjKWgF5BbBHqMeOOJhq.svg)](https://asciinema.org/a/137X6PyjKWgF5BbBHqMeOOJhq)
 
 
-6.  Example of package operation (json)
+5.  Example of package operation (json)
 ---
    [![asciicast](https://asciinema.org/a/beP5dJFB22WSAVdDRwzAhvWIn.svg)](https://asciinema.org/a/beP5dJFB22WSAVdDRwzAhvWIn)
 ---
