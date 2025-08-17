@@ -6,7 +6,7 @@
 
 
 
-### 💻 Requirements
+### 💻 Technology stack
 |     Tools      | Version |
 |:--------------:|:-------:|
 |     Python     | ^3.13.0 |
@@ -22,31 +22,46 @@ Input file support: YAML and JSON
 Output result: stylish, plain, json
 
 
-## 1) Usage:
 
-### Install dependencies - make install
+### 🔄 Installation  & Launching
+1. Install dependencies:
 
-### Example of package operation (json file)
+```bash
+make install
+```
+
+2. Linter
+   
+```bash
+ make lint
+```
+
+3. Testing
+
+```bash
+make check
+```
+
+### ⌨️ Usage examples
+
+1. Example of package operation (json file)
 [![asciicast](https://asciinema.org/a/TttQJvqMTfhhfqXkqxfK9DoB4.svg)](https://asciinema.org/a/TttQJvqMTfhhfqXkqxfK9DoB4)
 
-### Example of package operation (yaml file)
+2. Example of package operation (yaml file)
 [![asciicast](https://asciinema.org/a/n6D7ppTfdBFPFTT95J6OZRLLr.svg)](https://asciinema.org/a/n6D7ppTfdBFPFTT95J6OZRLLr)
 
-### Example of package operation (stylish)
+3. Example of package operation (stylish)
 [![asciicast](https://asciinema.org/a/JExu90EiBiLluYsxgTVe363gn.svg)](https://asciinema.org/a/JExu90EiBiLluYsxgTVe363gn)
 
-
-### Example of package operation (plain)
+4. Example of package operation (plain)
 [![asciicast](https://asciinema.org/a/137X6PyjKWgF5BbBHqMeOOJhq.svg)](https://asciinema.org/a/137X6PyjKWgF5BbBHqMeOOJhq)
 
-### Example of package operation (json)
+5.  Example of package operation (json)
 [![asciicast](https://asciinema.org/a/beP5dJFB22WSAVdDRwzAhvWIn.svg)](https://asciinema.org/a/beP5dJFB22WSAVdDRwzAhvWIn)
 
 
-## 2) Testing
 
-### Use comprehensive testing (coverage checks and tests) - make check
-
-
+### ❤️ Acknowledgements
+Thanks for stopping by, buddy! If you find this tool helpful, don't forget to give it a ⭐ on GitHub!
 
 
