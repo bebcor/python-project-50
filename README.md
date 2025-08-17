@@ -45,24 +45,29 @@ make check
 ### ⌨️ Usage examples
 
 1. Example of package operation (json file)
-[![asciicast](https://asciinema.org/a/TttQJvqMTfhhfqXkqxfK9DoB4.svg)](https://asciinema.org/a/TttQJvqMTfhhfqXkqxfK9DoB4)
-
+---
+   [![asciicast](https://asciinema.org/a/TttQJvqMTfhhfqXkqxfK9DoB4.svg)](https://asciinema.org/a/TttQJvqMTfhhfqXkqxfK9DoB4)
+---
 
 3. Example of package operation (yaml file)
-[![asciicast](https://asciinema.org/a/n6D7ppTfdBFPFTT95J6OZRLLr.svg)](https://asciinema.org/a/n6D7ppTfdBFPFTT95J6OZRLLr)
+---
+   [![asciicast](https://asciinema.org/a/n6D7ppTfdBFPFTT95J6OZRLLr.svg)](https://asciinema.org/a/n6D7ppTfdBFPFTT95J6OZRLLr)
+---
+
+4. Example of package operation (stylish)
+---
+   [![asciicast](https://asciinema.org/a/JExu90EiBiLluYsxgTVe363gn.svg)](https://asciinema.org/a/JExu90EiBiLluYsxgTVe363gn)
+---
+
+5. Example of package operation (plain)
+---
+   [![asciicast](https://asciinema.org/a/137X6PyjKWgF5BbBHqMeOOJhq.svg)](https://asciinema.org/a/137X6PyjKWgF5BbBHqMeOOJhq)
 
 
-5. Example of package operation (stylish)
-[![asciicast](https://asciinema.org/a/JExu90EiBiLluYsxgTVe363gn.svg)](https://asciinema.org/a/JExu90EiBiLluYsxgTVe363gn)
-
-
-7. Example of package operation (plain)
-[![asciicast](https://asciinema.org/a/137X6PyjKWgF5BbBHqMeOOJhq.svg)](https://asciinema.org/a/137X6PyjKWgF5BbBHqMeOOJhq)
-
-
-9.  Example of package operation (json)
-[![asciicast](https://asciinema.org/a/beP5dJFB22WSAVdDRwzAhvWIn.svg)](https://asciinema.org/a/beP5dJFB22WSAVdDRwzAhvWIn)
-
+6.  Example of package operation (json)
+---
+   [![asciicast](https://asciinema.org/a/beP5dJFB22WSAVdDRwzAhvWIn.svg)](https://asciinema.org/a/beP5dJFB22WSAVdDRwzAhvWIn)
+---
 
 
 
